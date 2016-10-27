@@ -10,6 +10,8 @@ until [ "$escolha" = "0" ]; do
     echo "4 - Sublime text 2"		
     echo "5 - instalar eclipse"
     echo "6 - Android Studio"
+    echo "7 - PostgreSQL version 9.3, versao official na PPA.."
+    echo "8 - GIT [teste]"		
     echo "0 - exit program"
     echo ""
     echo -n "Enter selection: "
@@ -28,6 +30,8 @@ until [ "$escolha" = "0" ]; do
 	    sudo apt-get update && sudo apt-get install sublime-text;;
 	5 ) sudo umake ide eclipse;;
 	6 ) sudo umake android android-studio;;
+	7 ) sudo sudo apt-get install postgresql-9.3;;
+	8 ) sudo apt-get install git;;
         0 ) exit ;;
         * ) echo "Digite suas opcoes ou DIGITE 0 para sair"
     esac
